@@ -35,8 +35,8 @@ const Contact = () => {
     setSubmitError("");
     
     try {
-      // שליחת הנתונים לשרת (צריך לבנות אנדפוינט בשרת)
-      await axios.post("/api/contact", data);
+      // שליחת הנתונים לשרת - שימוש ב-endpoint סרברלס של Vercel
+      const response = await axios.post("/api/contact", data);
       
       // אם ההודעה נשלחה בהצלחה
       setSubmitSuccess(true);

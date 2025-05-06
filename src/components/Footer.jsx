@@ -106,8 +106,8 @@ const Footer = () => {
                 <div className="bg-primary/10 p-2 rounded-full">
                   <FaPhone className="text-primary" />
                 </div>
-                <a href="tel:+972544945333" className="text-gray-600 hover:text-primary transition-colors">
-                  054-494-5333
+                <a href="tel:+97252-303-0009" className="text-gray-600 hover:text-primary transition-colors">
+                  052-303-0009
                 </a>
               </motion.div>
               
@@ -115,8 +115,8 @@ const Footer = () => {
                 <div className="bg-primary/10 p-2 rounded-full">
                   <FaEnvelope className="text-primary" />
                 </div>
-                <a href="mailto:contact@kavalue.co.il" className="text-gray-600 hover:text-primary transition-colors">
-                  contact@kavalue.co.il
+                <a href="mailto:kochavith.arnon@gmail.com" className="text-gray-600 hover:text-primary transition-colors">
+                  kochavith.arnon@gmail.com
                 </a>
               </motion.div>
               
