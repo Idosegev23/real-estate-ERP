@@ -1,0 +1,26 @@
+{
+  "name": "2Create - אנחנו לא מרכיבים אתרים. אנחנו יוצרים אותם.",
+  "short_name": "2Create",
+  "description": "שני מומחים. פתרון אחד. קוד + AI = אתר שמדבר עסקים.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F0F1",
+  "theme_color": "#6894A6",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "he",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 
