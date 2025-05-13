@@ -3,7 +3,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import type { Container, Engine } from "tsparticles-engine";
+import type { Engine } from "tsparticles-engine";
 
 const ParticlesBackground: React.FC = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -16,17 +16,12 @@ const ParticlesBackground: React.FC = () => {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    // הספרייה נטענה בהצלחה
-  }, []);
-
   if (!isMounted) return null;
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         fullScreen: {
           enable: true,
