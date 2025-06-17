@@ -1,7 +1,7 @@
 {
   "name": "2Create - אנחנו לא מרכיבים אתרים. אנחנו יוצרים אותם.",
   "short_name": "2Create",
-  "description": "שני מומחים. פתרון אחד. קוד + AI = אתר שמדבר עסקים.",
+  "description": "שני מומחים. פתרון אחד. קוד + AI = אתר שמדבר עסקים. פיתוח אתרים מותאמים אישית בקוד נקי עם פתרונות AI מתקדמים.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F2F0F1",
@@ -9,7 +9,40 @@
   "orientation": "portrait-primary",
   "dir": "rtl",
   "lang": "he",
+  "scope": "/",
+  "categories": ["business", "technology", "productivity"],
+  "screenshots": [
+    {
+      "src": "/logo.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "דף הבית של 2Create"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "צור קשר",
+      "short_name": "קשר",
+      "description": "יצירת קשר עם הצוות",
+      "url": "/#contact",
+      "icons": [{ "src": "/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "השירותים שלנו",
+      "short_name": "שירותים",
+      "description": "הפתרונות הטכנולוגיים שלנו",
+      "url": "/#services",
+      "icons": [{ "src": "/logo.png", "sizes": "192x192" }]
+    }
+  ],
   "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
