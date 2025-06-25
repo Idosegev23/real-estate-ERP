@@ -23,15 +23,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   const { user, loading, hasAccess } = useAuth();
   const location = useLocation();
 
-  console.log('ProtectedRoute check:', {
-    path: location.pathname,
-    userEmail: user?.email,
-    userRole: user?.user_role,
-    loading,
-    requiredRole,
-    resource,
-    resourceId
-  });
+  // Debug logging removed for production
 
   if (loading) {
     // Use custom fallback if provided, otherwise use default
@@ -53,19 +45,13 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
 
   // Check role-based access
   if (requiredRole && user.user_role !== requiredRole && user.user_role !== 'admin' && user.user_role !== 'super_admin') {
-    console.log('Access denied - role mismatch:', {
-      required: requiredRole,
-      actual: user.user_role
-    });
+    // Access denied - role mismatch
     return <Navigate to="/unauthorized" replace />;
   }
 
   // Check resource-based access
   if (resource && !hasAccess(resource, resourceId)) {
-    console.log('Access denied - resource mismatch:', {
-      resource,
-      resourceId
-    });
+    // Access denied - resource mismatch
     return <Navigate to="/unauthorized" replace />;
   }
 
